@@ -1,0 +1,75 @@
+https://code.visualstudio.com/
+https://nodejs.org/en/
+https://github.com/
+
+MERN
+
+Basic JavaScript
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Docker
+Third Party Api (Weather Api)
+Node-Es6(.babel)
+Github
+Email With Node(
+Redis  > 6379
+MongoDb Basic >27017
+Api with NodeJS(Rest)
+DashBoard(Crud)
+chatapp
+Production 
+Heroku
+Oauth(with github)
+Login/Logout(JWT)
+Testing
+Pm2
+Nginx
+OO_NodeJs
+NodeJs with postgres
+GraphQl API
+
+
+///////
+why NodeJs
+> single thread, nonblocking, async  I/O 
+> directly convert into machine lang
+> v8 engine
+
+>open source
+
+//////NPM///
+
+> local dependency
+> global dependency
+> dev dependency
+
+////package.json//////
+> entry point
+> script
+> meta data
+> package (local/dev)
+
+JSON> JavaScript Object Notation
+Way to respresent data
+[
+    {
+        name:'a',
+        class:1
+    },
+     {
+        name:'b',
+        class:2,
+        rollno:1
+    }
+]
+
+
+//////////////////////
+Step to create package.json
+//////////
+**Node Js must be installed in system
+> navigate to the folder using cmd
+> npm init 
+> Answer all question
+> type 'yes'
