@@ -73,3 +73,33 @@ Step to create package.json
 > npm init 
 > Answer all question
 > type 'yes'
+
+
+//////////////////////
+Step to install package
+/////////////////////
+local package
+global package
+dev dependency
+
+>>>>>Local Packages<<<
+Local to the folder 
+> navigate to the folder using cmd
+> npm i package name
+
+>>>>>dev dependency<<<
+> navigate to the folder using cmd
+> npm i packagename --save-dev
+> npm i mocha --save-dev
+
+>>>>>Global dependency<<<
+it is local to the system
+# help to setup and run the App
+
+#window
+> open cmd as admin
+> npm i -g nodemon
+
+#mac/linux
+> open terminal
+> sudo npm i -g nodemon
