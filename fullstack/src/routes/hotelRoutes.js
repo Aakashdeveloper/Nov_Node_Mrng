@@ -277,15 +277,19 @@ var hotels=[
     }
   ]
   
+function router(menu){
 
-hotelRouter.route('/')
-  .get(function(req,res){
-    res.render('hotel',{title:'Hotel Page',hoteldata:hotels})
-  })
+  hotelRouter.route('/')
+    .get(function(req,res){
+      res.render('hotel',{title:'Hotel Page',hoteldata:hotels,menu})
+    })
 
-hotelRouter.route('/details')
-  .get(function(req,res){
-    res.send("Hotel Details")
-  })
+  hotelRouter.route('/details')
+    .get(function(req,res){
+      res.send("Hotel Details")
+    })
 
-module.exports = hotelRouter;
+    return hotelRouter
+}
+
+module.exports = router;

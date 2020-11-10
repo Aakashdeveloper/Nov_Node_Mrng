@@ -102,3 +102,70 @@ it is local to the system
 #mac/linux
 > open terminal
 > sudo npm i -g nodemon
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+////////
+> https://www.mongodb.com/try/download/community
+> download and install MongoDb
+> Go inside C drive
+> create folder data/db
+
+
+Open one cmd
+> go inside mongodb folder(bin)
+> C/programfile/mongodb/server/4.4/bin
+> mongod 
+(this will start mongodb server 27017)
+
+Open second cmd
+> go inside mongodb folder(bin)
+> C/programfile/mongodb/server/4.4/bin
+> mongo 
+(this is mongodb console)
+
+///////////////////
+Nosql  Vs SQL
+/////////////////
+Sno | Hindi | English | Comp
+1   | 80    |         |
+2   |       | 80      |
+3   | 80    |         | 80
+
+[
+    {
+        sno:1,
+        hindi:80
+    },
+     {
+        sno:2,
+        English:80
+    }
+    ,
+     {
+        sno:3,
+        Hindi:80,
+        Comp:80
+     }
+]
+Schema less 
+
+
+Sql          NoSql
+Database     Database
+tables       collections
+row          document 
+
+//////to see all databases
+> show dbs
+> use nareshit
+> show collections
+> db.collectionname.find()
+
+////to create
+> use databasename
+> db.mycol.insert({name:'John'})
