@@ -7,15 +7,15 @@ Basic JavaScript
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
-//////////////
 Node-Es6(.babel)
 Redis  > 6379
+//////////////
 Github
-Email With Node(
-Docker
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
+Email With Node(
+Docker
 chatapp
 Production 
 Heroku
@@ -171,3 +171,31 @@ row          document
 > db.mycol.insert({name:'John'})
 
  npm i express ejs request
+
+ babel 
+
+ npm i @babel/core @babel/preset-env @babel/register
+
+ >>>>>>>>>><<<<<<<<<<<
+ redis-server
+ redis-cli
+
+ npm i axios express redis
+
+ 127.0.0.1:6379> KEYS *
+1) "city"
+2) "token"
+
+127.0.0.1:6379> get token
+"8768767"
+
+127.0.0.1:6379> set token1 mytoken
+OK
+
+127.0.0.1:6379> KEYS *
+1) "token1"
+2) "city"
+3) "token"
+
+127.0.0.1:6379> get token1
+"mytoken"
