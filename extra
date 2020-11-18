@@ -9,8 +9,8 @@ NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Node-Es6(.babel)
 Redis  > 6379
-//////////////
 Github
+//////////////
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
@@ -199,3 +199,36 @@ OK
 
 127.0.0.1:6379> get token1
 "mytoken"
+
+
+//////GITHUB//////
+>Copy whole code
+git clone https://github.com/Aakashdeveloper/javascript_test
+
+> push the code
+# git add .
+# git commit -m "Added new logo"
+# git push
+
+branch
+
+> git checkout -b branchname
+git add .
+git commit -m "Added new logo"
+git push -u branchname
+
+>>>>>New git Repo<<<<<<
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/node_test.git
+git push -u origin master
+
+git add .
+git commit -m "first commit"
+git push
+
+
+>>>>To Save Change<<<<
+git stash
+git stash apply
