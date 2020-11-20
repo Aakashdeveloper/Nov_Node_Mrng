@@ -3,7 +3,7 @@ import express from 'express'
 //var request = require('request');
 import request from 'request'
 let app = express();
-let port = 7899;
+let port = process.env.PORT|| 7899;
 
 let apiurl = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29";
 

@@ -10,21 +10,23 @@ Third Party Api (Weather Api)
 Node-Es6(.babel)
 Redis  > 6379
 Github
+Oauth(with github)
+>>Production<<
+Pm2
+Heroku
+
 //////////////
+Login/Logout(JWT)
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
+Testing
+OO_NodeJs
+
 Email With Node(
 Docker
 chatapp
-Production 
-Heroku
-Oauth(with github)
-Login/Logout(JWT)
-Testing
-Pm2
 Nginx
-OO_NodeJs
 NodeJs with postgres
 GraphQl API
 
@@ -232,3 +234,40 @@ git push
 >>>>To Save Change<<<<
 git stash
 git stash apply
+
+////////////////////
+> GET  https://github.com/login/oauth/authorize?client_id=353454
+  return(
+      code:''
+  )
+
+> POSt >https://github.com/login/oauth/access_token 
+send{
+    client_id:'',
+    client_secert:'',
+    code:''
+}
+return{
+    access_token
+}
+
+>GET >https://api.github.com/user
+send{
+    access_token
+}
+return{
+    user info
+}
+
+npm i express ejs cors request superagent
+
+95f859cdc8dbaeba978c
+4e0f207fffd3cc14f4b956fc29bbc7c60feda4e9
+
+
+npm i -g Pm2
+
+pm2 start start.js
+pm2 status
+pm2 stop start
+pm2 start api.js -i 4
