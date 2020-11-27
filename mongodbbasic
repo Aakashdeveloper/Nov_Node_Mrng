@@ -31,3 +31,33 @@ db.collection.insert([
         {_id:1,name:'aaaa'},
         {_id:2,name:'aaaa'}
     ])
+
+//update in mongodb
+db.mycol.update({_id:3},
+    {
+        $set:{
+            phone:3434
+        }
+    },
+    {
+        upsert:true
+    },
+    {
+        multi:true
+    }
+)
+
+//remove all
+db.mycol.remove({})
+
+
+//remove with condition
+db.mycol.remove({_id:1})
+
+db.mycol.count()
+> 5
+db.mycol.count({name:"John"})
+> 2
+
+// delete collection
+db.users.drop()

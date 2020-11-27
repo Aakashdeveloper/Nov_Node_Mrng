@@ -15,11 +15,11 @@ Oauth(with github)
 Pm2
 Heroku
 Login/Logout(JWT)
-//////////////
 MongoDb Basic >27017
 Api with NodeJS(Rest)
-DashBoard(Crud)
 Testing
+//////////////
+DashBoard(Crud)
 OO_NodeJs
 NodeJs with postgres
 
@@ -275,3 +275,6 @@ pm2 start api.js -i 4
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 
 /////////////////////////
+
+
+npm i body-parser ejs express mongodb chai chai-http mocha cors
