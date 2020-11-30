@@ -18,16 +18,16 @@ Login/Logout(JWT)
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 Testing
-//////////////
 DashBoard(Crud)
 OO_NodeJs
+Docker
+Nginx
+//////////////
+GraphQl API
 NodeJs with postgres
 
-Email With Node(
-Docker
+Email With Node
 chatapp
-Nginx
-GraphQl API
 
 
 ///////
@@ -278,3 +278,8 @@ npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 
 
 npm i body-parser ejs express mongodb chai chai-http mocha cors
+
+npm i express mongodb @babel/core @babel/preset-env @babel/register
+
+docker build . -t name
+docker run -p 7899:9000 name

@@ -12,39 +12,16 @@ let col_name="userdata";
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-app.use(express.static(__dirname+'/public'));
-app.set('views','./src/views');
-app.set('view engine','ejs');
+
 
 app.get('/health',(req,res) => {
     res.status(200).send('Health OK')
 });
-
-app.get('/',(req,res) => {
-    db.collection(col_name).find({isActive:true}).toArray((err,result) => {
-        if(err) throw err;
-        res.render('index',{data:result})
-    })
-});
-
-app.get('/new',(req,res) => {
-    var random = Math.floor(Math.random()*10000);
-    res.render('admin',{id:random})
-})
-
 //post user
 app.post('/addUser',(req,res) => {
-    const data={
-        "_id":parseInt(req.body._id),
-        "name":req.body.name,
-        "city":req.body.city,
-        "phone":req.body.phone,
-        "isActive":true
-    }
-    db.collection(col_name).insert(data,(err,result) =>{
+    db.collection(col_name).insert(req.body,(err,result) =>{
         if(err) throw err;
-        //res.status(200).send('Data Added')
-        res.redirect('/')
+        res.status(200).send('Data Added')
     })
 })
 
@@ -67,7 +44,7 @@ app.get('/users',(req,res) => {
 //update
 app.put('/updateUser',(req,res) => {
     db.collection(col_name).update(
-        {_id:Number(req.body._id)},
+        {_id:req.body._id},
         {
             $set:{
                 name:req.body.name,
@@ -84,7 +61,7 @@ app.put('/updateUser',(req,res) => {
 
 //delete
 app.delete('/deleteUser',(req,res) => {
-    db.collection(col_name).remove({_id:Number(req.body._id)},(err,result) =>{
+    db.collection(col_name).remove({_id:req.body._id},(err,result) =>{
         if(err) throw err;
         res.send('Data Deleted')
     })
