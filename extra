@@ -22,10 +22,9 @@ DashBoard(Crud)
 OO_NodeJs
 Docker
 Nginx
-//////////////
 GraphQl API
+//////////////
 NodeJs with postgres
-
 Email With Node
 chatapp
 
@@ -283,3 +282,27 @@ npm i express mongodb @babel/core @babel/preset-env @babel/register
 
 docker build . -t name
 docker run -p 7899:9000 name
+
+/////
+npm i axios cors express express-graphql graphql lodash
+
+//dummy api
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+//graphql
+{
+  Product(id:3){
+   name,
+    language
+  }
+}
+
+mutation{
+  addProducts(id:8889,
+    				name: "GoGo",
+            rate: 3.5){
+    id
+  }
+}
+
