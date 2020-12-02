@@ -23,12 +23,9 @@ OO_NodeJs
 Docker
 Nginx
 GraphQl API
-//////////////
-NodeJs with postgres
+NodeJs with postgre
 Email With Node
 chatapp
-
-
 ///////
 why NodeJs
 > single thread, nonblocking, async  I/O 
